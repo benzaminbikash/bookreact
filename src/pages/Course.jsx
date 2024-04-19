@@ -1,0 +1,37 @@
+import { courses } from "../utils/courses";
+
+const Course = () => {
+  return (
+    <div className="bg-black place-items-center mx-auto pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-20">
+      {courses.map((item, index) => {
+        return (
+          <div
+            key={index}
+            className="hover:scale-105 transition-all duration-300 ease-linear self-center card w-3/4 h-[400px] mb-4 dark:bg-red-600  bg-black shadow-md text-white shadow-red-600 dark:shadow-white"
+          >
+            <img
+              src={item.image}
+              alt="Shoes"
+              className="w-full  h-[150px] md:h-[200px] rounded-lg  bg-yellow-400 object-cover object-top"
+            />
+
+            <div className="card-body">
+              <h2 className="card-title text-sm font-bold">{item.name}</h2>
+              <p className="text-xs">
+                {item.summary.length > 150
+                  ? item.summary.substring(0, 150) + "..."
+                  : item.summary}
+              </p>
+              <div className="card-actions justify-end hidden md:flex ">
+                <div className="badge badge-outline">Fashion</div>
+                <div className="badge badge-outline">Products</div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default Course;

@@ -1,0 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.active {
+  background-color: none;
+  font-weight: bold;
+}
+.menu li > *:not(ul, .menu-title, details, .btn):active,
+.menu li > *:not(ul, .menu-title, details, .btn).active {
+  --tw-bg-opacity: 1;
+  background-color: none;
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc, oklch(var(--nc) / var(--tw-text-opacity)));
+}
+
+.textShadow {
+  text-shadow: 1px 1px 2px black;
+}
