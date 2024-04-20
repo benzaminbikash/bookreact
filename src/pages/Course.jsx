@@ -2,7 +2,7 @@ import { courses } from "../utils/courses";
 
 const Course = () => {
   return (
-    <div className="bg-black place-items-center mx-auto pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-20">
+    <div className="dark:bg-black bg-white place-items-center mx-auto pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-20">
       {courses.map((item, index) => {
         return (
           <div
@@ -16,16 +16,14 @@ const Course = () => {
             />
 
             <div className="card-body">
-              <h2 className="card-title text-sm font-bold">{item.name}</h2>
+              <h2 className="card-title text-sm font-bold animate-pulse">
+                {item.name}
+              </h2>
               <p className="text-xs">
                 {item.summary.length > 150
                   ? item.summary.substring(0, 150) + "..."
                   : item.summary}
               </p>
-              <div className="card-actions justify-end hidden md:flex ">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
-              </div>
             </div>
           </div>
         );

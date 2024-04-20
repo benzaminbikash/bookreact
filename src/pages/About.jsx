@@ -1,7 +1,14 @@
+import { useEffect } from "react";
 import Service from "../components/Service";
 import { services } from "../utils/services";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="w-full bg-white dark:bg-black text-black dark:text-white  pt-20 px-20">
       {/* for row */}

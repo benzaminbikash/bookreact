@@ -78,10 +78,6 @@ const Freebook = () => {
                     ? item.summary.substring(0, 150) + "..."
                     : item.summary}
                 </p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
-                </div>
               </div>
             </div>
           );
