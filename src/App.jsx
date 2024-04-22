@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Login from "./pages/Authentication/Login";
+import Detail from "./pages/Detail";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/course" element={<Course />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/bookdetail/:id" element={<Detail />} />
       </Routes>
       <Footer />
     </BrowserRouter>

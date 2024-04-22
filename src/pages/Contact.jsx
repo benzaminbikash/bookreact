@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className=" bg-white dark:bg-black">
+    <div className=" h-full bg-white dark:bg-black">
       <div className="pt-20  px-20 gap-2 max-w-screen-xl mx-auto flex justify-center">
         <form
           action=""

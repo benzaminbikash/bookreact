@@ -3,7 +3,7 @@ const Banner = () => {
     <div className="max-w-screen-2xl px-20 flex flex-col md:flex-row md:items-center">
       <div className="w-full md:w-1/2  order-2 md:order-1 lg:mt-48 mt-12 ">
         <div>
-          <h1 className="font-bold text-4xl dark:text-white text-black">
+          <h1 className="font-bold text-4xl dark:text-white text-black  md:pt-10 lg:pt-0">
             Hello, welcomes here to learn{" "}
             <span className="text-red-500">something new everyday!</span>
           </h1>

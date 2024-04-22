@@ -80,11 +80,13 @@ function Navbar() {
                   <NavLink to="/contact">Contact</NavLink>
                 </li>
                 <li>
-                  <a>About</a>
+                  <NavLink to="/about">About</NavLink>
                 </li>
               </ul>
             </div>
-            <a className="text-xl font-bold dark:text-white">Book Store</a>
+            <a className="text-xl font-bold dark:text-white hidden sm:inline">
+              Book Store
+            </a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 items-center dark:text-white ">
@@ -151,7 +153,7 @@ function Navbar() {
           <div className="navbar-end">
             <button
               onClick={() => navigate("/login")}
-              className="dark:bg-white bg-black text-white dark:text-black px-7 cursor-pointer  py-2 rounded-full"
+              className="dark:bg-white bg-black text-white dark:text-black px-7 cursor-pointer  py-2 rounded-full "
             >
               Login
             </button>

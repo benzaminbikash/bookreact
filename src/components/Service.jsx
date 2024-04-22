@@ -9,7 +9,7 @@ function Service({ items }) {
           alt="randomImage"
           className="h-[300px] w-[600px] object-fill rounded-sm brightness-110 group-hover:blur-sm group-hover:brightness-50"
         />
-        <div className=" absolute top-0 left-0 transform translate-y-20 px-2  group-hover:translate-y-0  right-0  w-[370px] h-[300px] opacity-0  bg-transparent group-hover:opacity-100 transition-all duration-1000 ease-in-out">
+        <div className=" absolute top-0 left-0 transform translate-y-5 px-2  group-hover:translate-y-0  right-0  w-[370px] h-[300px] opacity-0  bg-transparent group-hover:opacity-100 transition-all duration-1000 ease-in-out">
           <h1 className="text-center text-white textShadow">{items.title}</h1>
           <p className="text-white textShadow">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.

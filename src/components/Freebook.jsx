@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import { data } from "../utils/data";
+import { Link } from "react-router-dom";
 const Freebook = () => {
   var settings = {
     dots: true,
@@ -60,7 +61,9 @@ const Freebook = () => {
       <Slider {...settings} className="mt-5">
         {data.map((item, index) => {
           return (
-            <div
+            <Link
+              to={`bookdetail/${item.id}`}
+              state={item}
               key={index}
               className="card w-3/4 h-[500px] dark:bg-red-600  bg-black shadow-md text-white shadow-red-600 dark:shadow-white"
             >
@@ -79,7 +82,7 @@ const Freebook = () => {
                     : item.summary}
                 </p>
               </div>
-            </div>
+            </Link>
           );
         })}
       </Slider>
